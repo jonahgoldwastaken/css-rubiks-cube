@@ -7,10 +7,7 @@
   box-sizing: border-box;
 }
 
-bg {
-}
-
-main {
+:root {
   --size: clamp(10rem, 15vw, 15rem);
   --half-size: calc(var(--size) / 2);
   --bg-1: red;
@@ -19,7 +16,9 @@ main {
   --bg-4: yellow;
   --bg-5: white;
   --bg-6: orange;
+}
 
+main {
   position: absolute;
   top: calc(50% - var(--size) / 2);
   left: calc(50% - var(--size) / 2);
@@ -30,9 +29,6 @@ main {
 }
 
 main > section {
-  width: inherit;
-  height: inherit;
-  transform: rotateY(45deg);
   transform-style: preserve-3d;
   animation: cube-animation 5s linear infinite;
   transform-origin: var(--half-size) var(--half-size) var(--half-size);
@@ -40,11 +36,8 @@ main > section {
 
 section > div {
   position: absolute;
-  width: inherit;
-  height: inherit;
   display: flex;
   flex-wrap: wrap;
-  transform-style: preserve-3d;
   transform-origin: var(--half-size) var(--half-size) var(--half-size);
 }
 
@@ -52,7 +45,6 @@ div > div {
   width: calc(var(--size) / 3);
   height: calc(var(--size) / 3);
   border: calc(var(--size) / 30) solid black;
-  transform-style: preserve-3d;
 }
 
 section > div:first-of-type {
@@ -87,13 +79,10 @@ section > div:nth-of-type(6) {
 
 @keyframes cube-animation {
   from {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-  50% {
-    transform: rotateX(2turn) rotateY(360deg) rotateZ(360deg);
+    transform: rotateZ(0turn) rotateY(0turn);
   }
   to {
-    transform: rotateX(4turn) rotateY(720deg) rotateZ(720deg);
+    transform: rotateZ(1turn) rotateY(1turn);
   }
 }
 
