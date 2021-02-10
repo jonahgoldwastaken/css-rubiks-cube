@@ -1,0 +1,7 @@
+{
+  "editor.default_syntax" : "css",
+  "workspace.color" : 7,
+  "workspace.name" : "CTTR",
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "localhost:5000"
+}
