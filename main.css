@@ -25,64 +25,183 @@ main {
   width: var(--size);
   height: var(--size);
   perspective: calc(clamp(10rem, 15vw, 20rem) * 4);
-  animation: cube-container-animation 20s ease infinite;
+  /* animation: cube-container-animation 20s ease infinite; */
+}
+
+label {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+input {
+  float: left;
+  margin-right: 1em;
 }
 
 main > section {
   transform-style: preserve-3d;
-  animation: cube-animation 5s linear infinite;
+  transform: rotateX(-20deg);
+  /* animation: cube-animation 10s linear infinite; */
   transform-origin: var(--half-size) var(--half-size) var(--half-size);
 }
 
-section > div {
-  position: absolute;
+section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  transform-style: preserve-3d;
   transform-origin: var(--half-size) var(--half-size) var(--half-size);
 }
 
-div > div {
+section > ul {
+  position: absolute;
+  flex-wrap: wrap;
+}
+
+/* ROWS */
+li > ul {
+  width: var(--size);
+  height: calc(var(--size) / 3);
+}
+
+/* BLOCKS */
+section li ul li {
   width: calc(var(--size) / 3);
   height: calc(var(--size) / 3);
   border: calc(var(--size) / 30) solid black;
 }
 
-section > div:first-of-type {
-  transform: translateZ(0);
+/* CREATING SIDES AND GIVING COLOURS */
+section > ul:first-of-type {
+  transform: rotateY(180deg);
+}
+
+section ul:first-of-type li ul {
   background: var(--bg-1);
 }
 
-section > div:nth-of-type(2) {
+section > ul:nth-of-type(2) {
   transform: rotateY(90deg);
+}
+
+section ul:nth-of-type(2) li ul {
   background: var(--bg-2);
 }
 
-section > div:nth-of-type(3) {
-  transform: rotateY(-90deg);
+section > ul:nth-of-type(3) {
+  transform: rotateY(270deg);
+}
+
+section ul:nth-of-type(3) li ul {
   background: var(--bg-3);
 }
 
-section > div:nth-of-type(4) {
-  transform: rotateX(-90deg);
+section > ul:nth-of-type(4) {
+  transform: rotateX(270deg);
+}
+
+section ul:nth-of-type(4) li ul {
   background: var(--bg-4);
 }
 
-section > div:nth-of-type(5) {
+section > ul:nth-of-type(5) {
   transform: rotateX(90deg);
+}
+
+section ul:nth-of-type(5) li ul {
   background: var(--bg-5);
 }
 
-section > div:nth-of-type(6) {
-  transform: translateZ(var(--size));
-  background: var(--bg-6);
+section > ul:nth-of-type(6) {
+  transform: rotateY(0deg);
 }
 
+section ul:nth-of-type(6) li ul {
+  background: var(--bg-6);
+}
+/* END CREATING SIDES AND GIVING COLOURS */
+
+/* INTERACTIVITY */
+main section > ul:not(:nth-of-type(4)):not(:nth-of-type(5)) li ul {
+  --y: 0;
+  transform: rotateY(calc(var(--y) * 90deg));
+  transition: transform 0.4s cubic-bezier(0.64, 0.35, 0.26, 1.4);
+}
+
+main section > ul:nth-of-type(5),
+main section > ul:nth-of-type(4) {
+  --z: 0;
+  transition: transform 0.4s cubic-bezier(0.64, 0.35, 0.26, 1.4);
+}
+
+main section > ul:nth-of-type(4) {
+  transform: rotateX(270deg) rotateZ(calc(var(--z) * 90deg));
+}
+
+main section > ul:nth-of-type(5) {
+  transform: rotateX(90deg) rotateZ(calc(var(--z) * 90deg * -1));
+}
+
+[name='top'][value='1']:checked ~ main section > ul li:first-child ul {
+  --y: 1;
+}
+
+[name='top'][value='1']:checked ~ main section > ul:nth-child(4) {
+  --z: 1;
+}
+
+[name='top'][value='2']:checked ~ main section > ul li:first-child ul {
+  --y: 2;
+}
+
+[name='top'][value='2']:checked ~ main section > ul:nth-child(4) {
+  --z: 2;
+}
+
+[name='top'][value='3']:checked ~ main section > ul li:first-child ul {
+  --y: 3;
+}
+
+[name='top'][value='3']:checked ~ main section > ul:nth-child(4) {
+  --z: 3;
+}
+
+[name='bottom'][value='1']:checked ~ main section > ul li:nth-child(3) ul {
+  --y: 1;
+}
+
+[name='bottom'][value='1']:checked ~ main section > ul:nth-child(5) {
+  --z: 1;
+}
+
+[name='bottom'][value='2']:checked ~ main section > ul li:nth-child(3) ul {
+  --y: 2;
+}
+
+[name='bottom'][value='2']:checked ~ main section > ul:nth-child(5) {
+  --z: 2;
+}
+
+[name='bottom'][value='3']:checked ~ main section > ul li:nth-child(3) ul {
+  --y: 3;
+}
+
+[name='bottom'][value='3']:checked ~ main section > ul:nth-child(5) {
+  --z: 3;
+}
+/* END INTERACTIVITY */
+
+/* ANIMATIONS */
 @keyframes cube-animation {
   from {
-    transform: rotateZ(0turn) rotateY(0turn);
+    transform: rotateX(0turn) rotateY(0turn);
+  }
+  50% {
+    transform: rotateX(1turn) rotateY(0.5turn);
   }
   to {
-    transform: rotateZ(1turn) rotateY(1turn);
+    transform: rotateX(2turn) rotateY(1turn);
   }
 }
 
