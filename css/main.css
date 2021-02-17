@@ -1,0 +1,19 @@
+/* Perspective approach inspired by https://github.com/diervo/html5rubik/blob/master/rubik.css */
+/* HTML and CSS layout already set before implementing perspective */
+@import 'base.css';
+@import 'screensaver.css';
+@import 'inputs.css';
+@import 'cube.css';
+@import 'interactivity.css';
+
+main > section {
+  position: absolute;
+  top: calc(50% - var(--half-size));
+  left: calc(50% - var(--half-size));
+  width: var(--size);
+  height: var(--size);
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-30deg);
+  perspective: calc(clamp(10rem, 15vw, 20rem) * 196);
+  transform-origin: var(--half-size) var(--half-size) var(--half-size);
+}

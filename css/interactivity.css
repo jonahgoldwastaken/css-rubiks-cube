@@ -1,0 +1,332 @@
+/* ROW 1 */
+[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(19),
+[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(20),
+[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(21),
+[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(22),
+[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(23),
+[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(24),
+[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(25),
+[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(26),
+[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(27) {
+  --rotateZ: 0.25turn;
+}
+
+[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(19),
+[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(20),
+[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(21),
+[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(22),
+[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(23),
+[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(24),
+[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(25),
+[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(26),
+[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(27) {
+  --rotateZ: 0.5turn;
+}
+
+[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(19),
+[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(20),
+[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(21),
+[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(22),
+[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(23),
+[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(24),
+[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(25),
+[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(26),
+[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(27) {
+  --rotateZ: 0.75turn;
+}
+
+/* ROW 2 */
+[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(10),
+[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(11),
+[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(12),
+[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(13),
+[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(14),
+[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(15),
+[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(16),
+[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(17),
+[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(18) {
+  --rotateZ: 0.25turn;
+}
+
+[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(10),
+[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(11),
+[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(12),
+[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(13),
+[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(14),
+[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(15),
+[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(16),
+[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(17),
+[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(18) {
+  --rotateZ: 0.5turn;
+}
+
+[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(10),
+[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(11),
+[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(12),
+[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(13),
+[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(14),
+[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(15),
+[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(16),
+[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(17),
+[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(18) {
+  --rotateZ: 0.75turn;
+}
+
+/* ROW 3 */
+[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(1),
+[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(2),
+[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(3),
+[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(4),
+[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(5),
+[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(6),
+[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(7),
+[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(8),
+[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(9) {
+  --rotateZ: 0.25turn;
+}
+
+[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(1),
+[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(2),
+[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(3),
+[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(4),
+[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(5),
+[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(6),
+[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(7),
+[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(8),
+[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(9) {
+  --rotateZ: 0.5turn;
+}
+
+[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(1),
+[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(2),
+[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(3),
+[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(4),
+[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(5),
+[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(6),
+[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(7),
+[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(8),
+[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(9) {
+  --rotateZ: 0.75turn;
+}
+
+/* ROW 4 */
+[name^='row-4'][value='1']:checked ~ main section ul:nth-of-type(1),
+[name^='row-4'][value='1']:checked ~ main section ul:nth-of-type(2),
+[name^='row-4'][value='1']:checked ~ main section ul:nth-of-type(3),
+[name^='row-4'][value='1']:checked ~ main section ul:nth-of-type(10),
+[name^='row-4'][value='1']:checked ~ main section ul:nth-of-type(11),
+[name^='row-4'][value='1']:checked ~ main section ul:nth-of-type(12),
+[name^='row-4'][value='1']:checked ~ main section ul:nth-of-type(19),
+[name^='row-4'][value='1']:checked ~ main section ul:nth-of-type(20),
+[name^='row-4'][value='1']:checked ~ main section ul:nth-of-type(21) {
+  --rotateY: 0.25turn;
+}
+
+[name^='row-4'][value='2']:checked ~ main section ul:nth-of-type(1),
+[name^='row-4'][value='2']:checked ~ main section ul:nth-of-type(2),
+[name^='row-4'][value='2']:checked ~ main section ul:nth-of-type(3),
+[name^='row-4'][value='2']:checked ~ main section ul:nth-of-type(10),
+[name^='row-4'][value='2']:checked ~ main section ul:nth-of-type(11),
+[name^='row-4'][value='2']:checked ~ main section ul:nth-of-type(12),
+[name^='row-4'][value='2']:checked ~ main section ul:nth-of-type(19),
+[name^='row-4'][value='2']:checked ~ main section ul:nth-of-type(20),
+[name^='row-4'][value='2']:checked ~ main section ul:nth-of-type(21) {
+  --rotateY: 0.5turn;
+}
+
+[name^='row-4'][value='3']:checked ~ main section ul:nth-of-type(1),
+[name^='row-4'][value='3']:checked ~ main section ul:nth-of-type(2),
+[name^='row-4'][value='3']:checked ~ main section ul:nth-of-type(3),
+[name^='row-4'][value='3']:checked ~ main section ul:nth-of-type(10),
+[name^='row-4'][value='3']:checked ~ main section ul:nth-of-type(11),
+[name^='row-4'][value='3']:checked ~ main section ul:nth-of-type(12),
+[name^='row-4'][value='3']:checked ~ main section ul:nth-of-type(19),
+[name^='row-4'][value='3']:checked ~ main section ul:nth-of-type(20),
+[name^='row-4'][value='3']:checked ~ main section ul:nth-of-type(21) {
+  --rotateY: 0.75turn;
+}
+
+/* ROW 5 */
+[name^='row-5'][value='1']:checked ~ main section ul:nth-of-type(4),
+[name^='row-5'][value='1']:checked ~ main section ul:nth-of-type(5),
+[name^='row-5'][value='1']:checked ~ main section ul:nth-of-type(6),
+[name^='row-5'][value='1']:checked ~ main section ul:nth-of-type(13),
+[name^='row-5'][value='1']:checked ~ main section ul:nth-of-type(14),
+[name^='row-5'][value='1']:checked ~ main section ul:nth-of-type(15),
+[name^='row-5'][value='1']:checked ~ main section ul:nth-of-type(22),
+[name^='row-5'][value='1']:checked ~ main section ul:nth-of-type(23),
+[name^='row-5'][value='1']:checked ~ main section ul:nth-of-type(24) {
+  --rotateY: 0.25turn;
+}
+
+[name^='row-5'][value='2']:checked ~ main section ul:nth-of-type(4),
+[name^='row-5'][value='2']:checked ~ main section ul:nth-of-type(5),
+[name^='row-5'][value='2']:checked ~ main section ul:nth-of-type(6),
+[name^='row-5'][value='2']:checked ~ main section ul:nth-of-type(13),
+[name^='row-5'][value='2']:checked ~ main section ul:nth-of-type(14),
+[name^='row-5'][value='2']:checked ~ main section ul:nth-of-type(15),
+[name^='row-5'][value='2']:checked ~ main section ul:nth-of-type(22),
+[name^='row-5'][value='2']:checked ~ main section ul:nth-of-type(23),
+[name^='row-5'][value='2']:checked ~ main section ul:nth-of-type(24) {
+  --rotateY: 0.5turn;
+}
+
+[name^='row-5'][value='3']:checked ~ main section ul:nth-of-type(4),
+[name^='row-5'][value='3']:checked ~ main section ul:nth-of-type(5),
+[name^='row-5'][value='3']:checked ~ main section ul:nth-of-type(6),
+[name^='row-5'][value='3']:checked ~ main section ul:nth-of-type(13),
+[name^='row-5'][value='3']:checked ~ main section ul:nth-of-type(14),
+[name^='row-5'][value='3']:checked ~ main section ul:nth-of-type(15),
+[name^='row-5'][value='3']:checked ~ main section ul:nth-of-type(22),
+[name^='row-5'][value='3']:checked ~ main section ul:nth-of-type(23),
+[name^='row-5'][value='3']:checked ~ main section ul:nth-of-type(24) {
+  --rotateY: 0.75turn;
+}
+
+/* ROW 6 */
+[name^='row-6'][value='1']:checked ~ main section ul:nth-of-type(7),
+[name^='row-6'][value='1']:checked ~ main section ul:nth-of-type(8),
+[name^='row-6'][value='1']:checked ~ main section ul:nth-of-type(9),
+[name^='row-6'][value='1']:checked ~ main section ul:nth-of-type(16),
+[name^='row-6'][value='1']:checked ~ main section ul:nth-of-type(17),
+[name^='row-6'][value='1']:checked ~ main section ul:nth-of-type(18),
+[name^='row-6'][value='1']:checked ~ main section ul:nth-of-type(25),
+[name^='row-6'][value='1']:checked ~ main section ul:nth-of-type(26),
+[name^='row-6'][value='1']:checked ~ main section ul:nth-of-type(27) {
+  --rotateY: 0.25turn;
+}
+
+[name^='row-6'][value='2']:checked ~ main section ul:nth-of-type(7),
+[name^='row-6'][value='2']:checked ~ main section ul:nth-of-type(8),
+[name^='row-6'][value='2']:checked ~ main section ul:nth-of-type(9),
+[name^='row-6'][value='2']:checked ~ main section ul:nth-of-type(16),
+[name^='row-6'][value='2']:checked ~ main section ul:nth-of-type(17),
+[name^='row-6'][value='2']:checked ~ main section ul:nth-of-type(18),
+[name^='row-6'][value='2']:checked ~ main section ul:nth-of-type(25),
+[name^='row-6'][value='2']:checked ~ main section ul:nth-of-type(26),
+[name^='row-6'][value='2']:checked ~ main section ul:nth-of-type(27) {
+  --rotateY: 0.5turn;
+}
+
+[name^='row-6'][value='3']:checked ~ main section ul:nth-of-type(7),
+[name^='row-6'][value='3']:checked ~ main section ul:nth-of-type(8),
+[name^='row-6'][value='3']:checked ~ main section ul:nth-of-type(9),
+[name^='row-6'][value='3']:checked ~ main section ul:nth-of-type(16),
+[name^='row-6'][value='3']:checked ~ main section ul:nth-of-type(17),
+[name^='row-6'][value='3']:checked ~ main section ul:nth-of-type(18),
+[name^='row-6'][value='3']:checked ~ main section ul:nth-of-type(25),
+[name^='row-6'][value='3']:checked ~ main section ul:nth-of-type(26),
+[name^='row-6'][value='3']:checked ~ main section ul:nth-of-type(27) {
+  --rotateY: 0.75turn;
+}
+
+/* COLUMN 4 */
+[name^='column-4'][value='1']:checked ~ main section ul:nth-of-type(1),
+[name^='column-4'][value='1']:checked ~ main section ul:nth-of-type(4),
+[name^='column-4'][value='1']:checked ~ main section ul:nth-of-type(7),
+[name^='column-4'][value='1']:checked ~ main section ul:nth-of-type(10),
+[name^='column-4'][value='1']:checked ~ main section ul:nth-of-type(13),
+[name^='column-4'][value='1']:checked ~ main section ul:nth-of-type(16),
+[name^='column-4'][value='1']:checked ~ main section ul:nth-of-type(19),
+[name^='column-4'][value='1']:checked ~ main section ul:nth-of-type(22),
+[name^='column-4'][value='1']:checked ~ main section ul:nth-of-type(25) {
+  --rotateX: 0.25turn;
+}
+
+[name^='column-4'][value='2']:checked ~ main section ul:nth-of-type(1),
+[name^='column-4'][value='2']:checked ~ main section ul:nth-of-type(4),
+[name^='column-4'][value='2']:checked ~ main section ul:nth-of-type(7),
+[name^='column-4'][value='2']:checked ~ main section ul:nth-of-type(10),
+[name^='column-4'][value='2']:checked ~ main section ul:nth-of-type(13),
+[name^='column-4'][value='2']:checked ~ main section ul:nth-of-type(16),
+[name^='column-4'][value='2']:checked ~ main section ul:nth-of-type(19),
+[name^='column-4'][value='2']:checked ~ main section ul:nth-of-type(22),
+[name^='column-4'][value='2']:checked ~ main section ul:nth-of-type(25) {
+  --rotateX: 0.5turn;
+}
+
+[name^='column-4'][value='3']:checked ~ main section ul:nth-of-type(1),
+[name^='column-4'][value='3']:checked ~ main section ul:nth-of-type(4),
+[name^='column-4'][value='3']:checked ~ main section ul:nth-of-type(7),
+[name^='column-4'][value='3']:checked ~ main section ul:nth-of-type(10),
+[name^='column-4'][value='3']:checked ~ main section ul:nth-of-type(13),
+[name^='column-4'][value='3']:checked ~ main section ul:nth-of-type(16),
+[name^='column-4'][value='3']:checked ~ main section ul:nth-of-type(19),
+[name^='column-4'][value='3']:checked ~ main section ul:nth-of-type(22),
+[name^='column-4'][value='3']:checked ~ main section ul:nth-of-type(25) {
+  --rotateX: 0.75turn;
+}
+
+/* COLUMN 5 */
+[name^='column-5'][value='1']:checked ~ main section ul:nth-of-type(2),
+[name^='column-5'][value='1']:checked ~ main section ul:nth-of-type(5),
+[name^='column-5'][value='1']:checked ~ main section ul:nth-of-type(8),
+[name^='column-5'][value='1']:checked ~ main section ul:nth-of-type(11),
+[name^='column-5'][value='1']:checked ~ main section ul:nth-of-type(14),
+[name^='column-5'][value='1']:checked ~ main section ul:nth-of-type(17),
+[name^='column-5'][value='1']:checked ~ main section ul:nth-of-type(20),
+[name^='column-5'][value='1']:checked ~ main section ul:nth-of-type(23),
+[name^='column-5'][value='1']:checked ~ main section ul:nth-of-type(26) {
+  --rotateX: 0.25turn;
+}
+
+[name^='column-5'][value='2']:checked ~ main section ul:nth-of-type(2),
+[name^='column-5'][value='2']:checked ~ main section ul:nth-of-type(5),
+[name^='column-5'][value='2']:checked ~ main section ul:nth-of-type(8),
+[name^='column-5'][value='2']:checked ~ main section ul:nth-of-type(11),
+[name^='column-5'][value='2']:checked ~ main section ul:nth-of-type(14),
+[name^='column-5'][value='2']:checked ~ main section ul:nth-of-type(17),
+[name^='column-5'][value='2']:checked ~ main section ul:nth-of-type(20),
+[name^='column-5'][value='2']:checked ~ main section ul:nth-of-type(23),
+[name^='column-5'][value='2']:checked ~ main section ul:nth-of-type(26) {
+  --rotateX: 0.5turn;
+}
+
+[name^='column-5'][value='3']:checked ~ main section ul:nth-of-type(2),
+[name^='column-5'][value='3']:checked ~ main section ul:nth-of-type(5),
+[name^='column-5'][value='3']:checked ~ main section ul:nth-of-type(8),
+[name^='column-5'][value='3']:checked ~ main section ul:nth-of-type(11),
+[name^='column-5'][value='3']:checked ~ main section ul:nth-of-type(14),
+[name^='column-5'][value='3']:checked ~ main section ul:nth-of-type(17),
+[name^='column-5'][value='3']:checked ~ main section ul:nth-of-type(20),
+[name^='column-5'][value='3']:checked ~ main section ul:nth-of-type(23),
+[name^='column-5'][value='3']:checked ~ main section ul:nth-of-type(26) {
+  --rotateX: 0.75turn;
+}
+
+/* COLUMN 6 */
+[name^='column-6'][value='1']:checked ~ main section ul:nth-of-type(3),
+[name^='column-6'][value='1']:checked ~ main section ul:nth-of-type(6),
+[name^='column-6'][value='1']:checked ~ main section ul:nth-of-type(9),
+[name^='column-6'][value='1']:checked ~ main section ul:nth-of-type(12),
+[name^='column-6'][value='1']:checked ~ main section ul:nth-of-type(15),
+[name^='column-6'][value='1']:checked ~ main section ul:nth-of-type(18),
+[name^='column-6'][value='1']:checked ~ main section ul:nth-of-type(21),
+[name^='column-6'][value='1']:checked ~ main section ul:nth-of-type(24),
+[name^='column-6'][value='1']:checked ~ main section ul:nth-of-type(27) {
+  --rotateX: 0.25turn;
+}
+
+[name^='column-6'][value='2']:checked ~ main section ul:nth-of-type(3),
+[name^='column-6'][value='2']:checked ~ main section ul:nth-of-type(6),
+[name^='column-6'][value='2']:checked ~ main section ul:nth-of-type(9),
+[name^='column-6'][value='2']:checked ~ main section ul:nth-of-type(12),
+[name^='column-6'][value='2']:checked ~ main section ul:nth-of-type(15),
+[name^='column-6'][value='2']:checked ~ main section ul:nth-of-type(18),
+[name^='column-6'][value='2']:checked ~ main section ul:nth-of-type(21),
+[name^='column-6'][value='2']:checked ~ main section ul:nth-of-type(24),
+[name^='column-6'][value='2']:checked ~ main section ul:nth-of-type(27) {
+  --rotateX: 0.5turn;
+}
+
+[name^='column-6'][value='3']:checked ~ main section ul:nth-of-type(3),
+[name^='column-6'][value='3']:checked ~ main section ul:nth-of-type(6),
+[name^='column-6'][value='3']:checked ~ main section ul:nth-of-type(9),
+[name^='column-6'][value='3']:checked ~ main section ul:nth-of-type(12),
+[name^='column-6'][value='3']:checked ~ main section ul:nth-of-type(15),
+[name^='column-6'][value='3']:checked ~ main section ul:nth-of-type(18),
+[name^='column-6'][value='3']:checked ~ main section ul:nth-of-type(21),
+[name^='column-6'][value='3']:checked ~ main section ul:nth-of-type(24),
+[name^='column-6'][value='3']:checked ~ main section ul:nth-of-type(27) {
+  --rotateX: 0.75turn;
+}
