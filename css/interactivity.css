@@ -230,7 +230,7 @@
 [name^='column-4'][value='1']:checked ~ main section ul:nth-of-type(19),
 [name^='column-4'][value='1']:checked ~ main section ul:nth-of-type(22),
 [name^='column-4'][value='1']:checked ~ main section ul:nth-of-type(25) {
-  --rotateX: 0.25turn;
+  --rotateX: -0.25turn;
 }
 
 [name^='column-4'][value='2']:checked ~ main section ul:nth-of-type(1),
@@ -242,7 +242,7 @@
 [name^='column-4'][value='2']:checked ~ main section ul:nth-of-type(19),
 [name^='column-4'][value='2']:checked ~ main section ul:nth-of-type(22),
 [name^='column-4'][value='2']:checked ~ main section ul:nth-of-type(25) {
-  --rotateX: 0.5turn;
+  --rotateX: -0.5turn;
 }
 
 [name^='column-4'][value='3']:checked ~ main section ul:nth-of-type(1),
@@ -254,7 +254,7 @@
 [name^='column-4'][value='3']:checked ~ main section ul:nth-of-type(19),
 [name^='column-4'][value='3']:checked ~ main section ul:nth-of-type(22),
 [name^='column-4'][value='3']:checked ~ main section ul:nth-of-type(25) {
-  --rotateX: 0.75turn;
+  --rotateX: -0.75turn;
 }
 
 /* COLUMN 5 */
@@ -267,7 +267,7 @@
 [name^='column-5'][value='1']:checked ~ main section ul:nth-of-type(20),
 [name^='column-5'][value='1']:checked ~ main section ul:nth-of-type(23),
 [name^='column-5'][value='1']:checked ~ main section ul:nth-of-type(26) {
-  --rotateX: 0.25turn;
+  --rotateX: -0.25turn;
 }
 
 [name^='column-5'][value='2']:checked ~ main section ul:nth-of-type(2),
@@ -279,7 +279,7 @@
 [name^='column-5'][value='2']:checked ~ main section ul:nth-of-type(20),
 [name^='column-5'][value='2']:checked ~ main section ul:nth-of-type(23),
 [name^='column-5'][value='2']:checked ~ main section ul:nth-of-type(26) {
-  --rotateX: 0.5turn;
+  --rotateX: -0.5turn;
 }
 
 [name^='column-5'][value='3']:checked ~ main section ul:nth-of-type(2),
@@ -291,7 +291,7 @@
 [name^='column-5'][value='3']:checked ~ main section ul:nth-of-type(20),
 [name^='column-5'][value='3']:checked ~ main section ul:nth-of-type(23),
 [name^='column-5'][value='3']:checked ~ main section ul:nth-of-type(26) {
-  --rotateX: 0.75turn;
+  --rotateX: -0.75turn;
 }
 
 /* COLUMN 6 */
@@ -304,7 +304,7 @@
 [name^='column-6'][value='1']:checked ~ main section ul:nth-of-type(21),
 [name^='column-6'][value='1']:checked ~ main section ul:nth-of-type(24),
 [name^='column-6'][value='1']:checked ~ main section ul:nth-of-type(27) {
-  --rotateX: 0.25turn;
+  --rotateX: -0.25turn;
 }
 
 [name^='column-6'][value='2']:checked ~ main section ul:nth-of-type(3),
@@ -316,7 +316,7 @@
 [name^='column-6'][value='2']:checked ~ main section ul:nth-of-type(21),
 [name^='column-6'][value='2']:checked ~ main section ul:nth-of-type(24),
 [name^='column-6'][value='2']:checked ~ main section ul:nth-of-type(27) {
-  --rotateX: 0.5turn;
+  --rotateX: -0.5turn;
 }
 
 [name^='column-6'][value='3']:checked ~ main section ul:nth-of-type(3),
@@ -328,5 +328,5 @@
 [name^='column-6'][value='3']:checked ~ main section ul:nth-of-type(21),
 [name^='column-6'][value='3']:checked ~ main section ul:nth-of-type(24),
 [name^='column-6'][value='3']:checked ~ main section ul:nth-of-type(27) {
-  --rotateX: 0.75turn;
+  --rotateX: -0.75turn;
 }
