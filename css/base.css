@@ -5,7 +5,7 @@
 }
 
 :root {
-  --size: clamp(10rem, 15vw, 15rem);
+  --size: 10rem;
   --half-size: calc(var(--size) / 2);
   --cube-size: calc(var(--size) / 3);
   --half-cube-size: calc(var(--cube-size) / 2);
@@ -15,6 +15,10 @@
   --yellow: yellow;
   --white: white;
   --orange: orange;
+}
+
+body {
+  margin: 0;
 }
 
 main {

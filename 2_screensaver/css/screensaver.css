@@ -1,0 +1,111 @@
+main {
+  background: black;
+}
+
+input,
+label {
+  display: none;
+}
+
+main section {
+  animation: screensaver 50s ease infinite;
+}
+
+main section > ul:nth-of-type(1),
+main section > ul:nth-of-type(2),
+main section > ul:nth-of-type(3),
+main section > ul:nth-of-type(4),
+main section > ul:nth-of-type(5),
+main section > ul:nth-of-type(6),
+main section > ul:nth-of-type(7),
+main section > ul:nth-of-type(8),
+main section > ul:nth-of-type(9) {
+  animation: screensaver-y-side 4s ease-in-out infinite alternate;
+}
+
+main section > ul:nth-of-type(10),
+main section > ul:nth-of-type(11),
+main section > ul:nth-of-type(12),
+main section > ul:nth-of-type(13),
+main section > ul:nth-of-type(14),
+main section > ul:nth-of-type(15),
+main section > ul:nth-of-type(16),
+main section > ul:nth-of-type(17),
+main section > ul:nth-of-type(18) {
+  animation: screensaver-y-side 3.2s 0.34s ease-in-out infinite alternate;
+}
+
+main section > ul:nth-of-type(19),
+main section > ul:nth-of-type(20),
+main section > ul:nth-of-type(21),
+main section > ul:nth-of-type(22),
+main section > ul:nth-of-type(23),
+main section > ul:nth-of-type(24),
+main section > ul:nth-of-type(25),
+main section > ul:nth-of-type(26),
+main section > ul:nth-of-type(27) {
+  animation: screensaver-y-side 3.5s 0.69s ease-in-out infinite alternate;
+}
+
+@keyframes screensaver {
+  from {
+    top: 20%;
+    left: 20%;
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  20% {
+    top: 30%;
+    left: 80%;
+    transform: rotate3d(0.3, 0.8, 0, 80deg);
+  }
+  40% {
+    top: 60%;
+    left: 50%;
+    transform: rotate3d(0.6, 0.2, 1, -160deg);
+  }
+  60% {
+    top: 60%;
+    left: 30%;
+    transform: rotate3d(0.5, 0.3, 0.4, 270deg);
+  }
+  80% {
+    top: 40%;
+    left: 70%;
+    transform: rotate3d(0.1, 0.8, 1, 80deg);
+  }
+  100% {
+    top: 20%;
+    left: 20%;
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+@keyframes screensaver-y-side {
+  from {
+    transform: rotateZ(0turn)
+      translateX(calc(var(--x) * var(--cube-size) + var(--cube-size)))
+      translateY(calc(var(--y) * var(--cube-size) + var(--cube-size)))
+      translateZ(calc(var(--z) * var(--cube-size) + var(--cube-size)));
+  }
+  to {
+    transform: rotateZ(4turn)
+      translateX(calc(var(--x) * var(--cube-size) + var(--cube-size)))
+      translateY(calc(var(--y) * var(--cube-size) + var(--cube-size)))
+      translateZ(calc(var(--z) * var(--cube-size) + var(--cube-size)));
+  }
+}
+
+@keyframes screensaver-y {
+  from {
+    transform: rotateY(0turn)
+      translateX(calc(var(--x) * var(--cube-size) + var(--cube-size)))
+      translateY(calc(var(--y) * var(--cube-size) + var(--cube-size)))
+      translateZ(calc(var(--z) * var(--cube-size) + var(--cube-size)));
+  }
+  to {
+    transform: rotateY(4turn)
+      translateX(calc(var(--x) * var(--cube-size) + var(--cube-size)))
+      translateY(calc(var(--y) * var(--cube-size) + var(--cube-size)))
+      translateZ(calc(var(--z) * var(--cube-size) + var(--cube-size)));
+  }
+}

@@ -1,3 +1,15 @@
+main > section {
+  position: absolute;
+  top: calc(50% - var(--half-size));
+  left: calc(50% - var(--half-size));
+  width: var(--size);
+  height: var(--size);
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(-20deg);
+  perspective: calc(20rem * 196);
+  transform-origin: var(--half-size) var(--half-size) var(--half-size);
+}
+
 section ul {
   --x: 0;
   --y: 0;
@@ -5,6 +17,12 @@ section ul {
   --rotateX: 0;
   --rotateY: 0;
   --rotateZ: 0;
+  --front-side: var(--red);
+  --left-side: var(--blue);
+  --right-side: var(--green);
+  --back-side: var(--white);
+  --top-side: var(--yellow);
+  --bottom-side: var(--orange);
   position: absolute;
   margin: 0;
   padding: 0;
@@ -12,7 +30,6 @@ section ul {
   height: var(--cube-size);
   list-style: none;
   transform-style: preserve-3d;
-  transition: transform 0.4s cubic-bezier(0.64, 0.35, 0.26, 1.4);
   transform: rotateX(var(--rotateX)) rotateY(var(--rotateY))
     rotateZ(var(--rotateZ))
     translateX(calc(var(--x) * var(--cube-size) + var(--cube-size)))
@@ -31,240 +48,186 @@ section ul li {
 }
 
 section ul li:nth-child(1) {
-  background: var(--front-side, black);
+  background: var(--front-side);
   transform: translateZ(var(--cube-size));
 }
 
 section ul li:nth-child(2) {
-  background: var(--left-side, black);
+  background: var(--left-side);
   transform: rotateY(0.25turn);
 }
 
 section ul li:nth-child(3) {
-  background: var(--back-side, black);
+  background: var(--back-side);
   transform: rotateY(0.5turn) translateZ(var(--cube-size));
 }
 
 section ul li:nth-child(4) {
-  background: var(--right-side, black);
+  background: var(--right-side);
   transform: rotateY(0.75turn);
 }
 
 section ul li:nth-child(5) {
-  background: var(--top-side, black);
+  background: var(--top-side);
   transform: rotateX(-0.25turn);
 }
 
 section ul li:nth-child(6) {
-  background: var(--bottom-side, black);
+  background: var(--bottom-side);
   transform: rotateX(0.25turn);
 }
 
 main section ul:nth-of-type(1) {
-  --front-side: var(--red);
-  --left-side: var(--blue);
-  --top-side: var(--yellow);
   --x: -1;
   --y: -1;
   --z: 1;
 }
 
 main section ul:nth-of-type(2) {
-  --top-side: var(--yellow);
-  --front-side: var(--red);
   --x: 0;
   --y: -1;
   --z: 1;
 }
 
 main section ul:nth-of-type(3) {
-  --front-side: var(--red);
-  --top-side: var(--yellow);
-  --right-side: var(--green);
   --x: 1;
   --y: -1;
   --z: 1;
 }
 
 main section ul:nth-of-type(4) {
-  --front-side: var(--red);
-  --left-side: var(--blue);
   --x: -1;
   --y: 0;
   --z: 1;
 }
 
 main section ul:nth-of-type(5) {
-  --front-side: var(--red);
   --x: 0;
   --y: 0;
   --z: 1;
 }
 
 main section ul:nth-of-type(6) {
-  --front-side: var(--red);
-  --right-side: var(--green);
   --x: 1;
   --y: 0;
   --z: 1;
 }
 
 main section ul:nth-of-type(7) {
-  --front-side: var(--red);
-  --bottom-side: var(--orange);
-  --left-side: var(--blue);
   --x: -1;
   --y: 1;
   --z: 1;
 }
 
 main section ul:nth-of-type(8) {
-  --front-side: var(--red);
-  --bottom-side: var(--orange);
   --x: 0;
   --y: 1;
   --z: 1;
 }
 
 main section ul:nth-of-type(9) {
-  --bottom-side: var(--orange);
-  --front-side: var(--red);
-  --right-side: var(--green);
   --x: 1;
   --y: 1;
   --z: 1;
 }
 
 main section ul:nth-of-type(10) {
-  --left-side: var(--blue);
-  --top-side: var(--yellow);
   --x: -1;
   --y: -1;
   --z: 0;
 }
 
 main section ul:nth-of-type(11) {
-  --top-side: var(--yellow);
   --x: 0;
   --y: -1;
   --z: 0;
 }
 
 main section ul:nth-of-type(12) {
-  --top-side: var(--yellow);
-  --right-side: var(--green);
   --x: 1;
   --y: -1;
   --z: 0;
 }
 
 main section ul:nth-of-type(13) {
-  --left-side: var(--blue);
   --x: -1;
   --y: 0;
   --z: 0;
 }
 
 main section ul:nth-of-type(15) {
-  --right-side: var(--green);
   --x: 1;
   --y: 0;
   --z: 0;
 }
 
 main section ul:nth-of-type(16) {
-  --left-side: var(--blue);
-  --bottom-side: var(--orange);
   --x: -1;
   --y: 1;
   --z: 0;
 }
 
 main section ul:nth-of-type(17) {
-  --bottom-side: var(--orange);
   --x: 0;
   --y: 1;
   --z: 0;
 }
 
 main section ul:nth-of-type(18) {
-  --right-side: var(--green);
-  --bottom-side: var(--orange);
   --x: 1;
   --y: 1;
   --z: 0;
 }
 
 main section ul:nth-of-type(19) {
-  --left-side: var(--blue);
-  --top-side: var(--yellow);
-  --back-side: var(--white);
   --x: -1;
   --y: -1;
   --z: -1;
 }
 
 main section ul:nth-of-type(20) {
-  --top-side: var(--yellow);
-  --back-side: var(--white);
   --x: 0;
   --y: -1;
   --z: -1;
 }
 
 main section ul:nth-of-type(21) {
-  --top-side: var(--yellow);
-  --right-side: var(--green);
-  --back-side: var(--white);
   --x: 1;
   --y: -1;
   --z: -1;
 }
 
 main section ul:nth-of-type(22) {
-  --left-side: var(--blue);
-  --back-side: var(--white);
   --x: -1;
   --y: 0;
   --z: -1;
 }
 
 main section ul:nth-of-type(23) {
-  --back-side: var(--white);
   --x: 0;
   --y: 0;
   --z: -1;
 }
 
 main section ul:nth-of-type(24) {
-  --back-side: var(--white);
-  --right-side: var(--green);
   --x: 1;
   --y: 0;
   --z: -1;
 }
 
 main section ul:nth-of-type(25) {
-  --left-side: var(--blue);
-  --back-side: var(--white);
-  --bottom-side: var(--orange);
   --x: -1;
   --y: 1;
   --z: -1;
 }
 
 main section ul:nth-of-type(26) {
-  --back-side: var(--white);
-  --bottom-side: var(--orange);
   --x: 0;
   --y: 1;
   --z: -1;
 }
 
 main section ul:nth-of-type(27) {
-  --right-side: var(--green);
-  --back-side: var(--white);
-  --bottom-side: var(--orange);
   --x: 1;
   --y: 1;
   --z: -1;
