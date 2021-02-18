@@ -770,7 +770,33 @@ main section ul:nth-child(27) {
     animation: jump-a-round 1.5s;
   }
 
-  main section ul {
+  main section ul:nth-child(1),
+  main section ul:nth-child(2),
+  main section ul:nth-child(3),
+  main section ul:nth-child(4),
+  main section ul:nth-child(5),
+  main section ul:nth-child(6),
+  main section ul:nth-child(7),
+  main section ul:nth-child(8),
+  main section ul:nth-child(9),
+  main section ul:nth-child(10),
+  main section ul:nth-child(11),
+  main section ul:nth-child(12),
+  main section ul:nth-child(13),
+  main section ul:nth-child(14),
+  main section ul:nth-child(15),
+  main section ul:nth-child(16),
+  main section ul:nth-child(17),
+  main section ul:nth-child(18),
+  main section ul:nth-child(19),
+  main section ul:nth-child(20),
+  main section ul:nth-child(21),
+  main section ul:nth-child(22),
+  main section ul:nth-child(23),
+  main section ul:nth-child(24),
+  main section ul:nth-child(25),
+  main section ul:nth-child(26),
+  main section ul:nth-child(27) {
     animation: none;
   }
 }

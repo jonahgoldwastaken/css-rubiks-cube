@@ -1,0 +1,172 @@
+main > section {
+  animation: rotate 5s linear infinite;
+}
+
+section ul {
+  transition: transform 0.4s ease-out;
+}
+
+section:hover ul:nth-of-type(1) {
+  --z: 2;
+  --x: -2;
+  --y: -2;
+}
+
+section:hover ul:nth-of-type(2) {
+  --z: 2;
+  --x: 0;
+  --y: -2;
+}
+
+section:hover ul:nth-of-type(3) {
+  --z: 2;
+  --x: 2;
+  --y: -2;
+}
+
+section:hover ul:nth-of-type(4) {
+  --z: 2;
+  --x: -2;
+  --y: 0;
+}
+
+section:hover ul:nth-of-type(5) {
+  --z: 2;
+  --x: 0;
+  --y: 0;
+}
+
+section:hover ul:nth-of-type(6) {
+  --z: 2;
+  --x: 2;
+  --y: 0;
+}
+
+section:hover ul:nth-of-type(7) {
+  --z: 2;
+  --x: -2;
+  --y: 2;
+}
+
+section:hover ul:nth-of-type(8) {
+  --z: 2;
+  --x: 0;
+  --y: 2;
+}
+
+section:hover ul:nth-of-type(9) {
+  --z: 2;
+  --x: 2;
+  --y: 2;
+}
+
+section:hover ul:nth-of-type(10) {
+  --z: 0;
+  --x: -2;
+  --y: -2;
+}
+
+section:hover ul:nth-of-type(11) {
+  --z: 0;
+  --x: 0;
+  --y: -2;
+}
+
+section:hover ul:nth-of-type(12) {
+  --z: 0;
+  --x: 2;
+  --y: -2;
+}
+
+section:hover ul:nth-of-type(13) {
+  --z: 0;
+  --x: -2;
+  --y: 0;
+}
+
+section:hover ul:nth-of-type(15) {
+  --z: 0;
+  --x: 2;
+  --y: 0;
+}
+
+section:hover ul:nth-of-type(16) {
+  --z: 0;
+  --x: -2;
+  --y: 2;
+}
+
+section:hover ul:nth-of-type(17) {
+  --z: 0;
+  --x: 0;
+  --y: 2;
+}
+
+section:hover ul:nth-of-type(18) {
+  --z: 0;
+  --x: 2;
+  --y: 2;
+}
+
+section:hover ul:nth-of-type(19) {
+  --z: -2;
+  --x: -2;
+  --y: -2;
+}
+
+section:hover ul:nth-of-type(20) {
+  --z: -2;
+  --x: 0;
+  --y: -2;
+}
+
+section:hover ul:nth-of-type(21) {
+  --z: -2;
+  --x: 2;
+  --y: -2;
+}
+
+section:hover ul:nth-of-type(22) {
+  --z: -2;
+  --x: -2;
+  --y: 0;
+}
+
+section:hover ul:nth-of-type(23) {
+  --z: -2;
+  --x: 0;
+  --y: 0;
+}
+
+section:hover ul:nth-of-type(24) {
+  --z: -2;
+  --x: 2;
+  --y: 0;
+}
+
+section:hover ul:nth-of-type(25) {
+  --z: -2;
+  --x: -2;
+  --y: 2;
+}
+
+section:hover ul:nth-of-type(26) {
+  --z: -2;
+  --x: 0;
+  --y: 2;
+}
+
+section:hover ul:nth-of-type(27) {
+  --z: -2;
+  --x: 2;
+  --y: 2;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(-20deg) rotatey(0turn);
+  }
+  to {
+    transform: rotateX(-20deg) rotatey(1turn);
+  }
+}

@@ -1,0 +1,173 @@
+body {
+  background: linear-gradient(
+    to bottom right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    purple,
+    violet
+  );
+  background-size: 700vmax 700vmax;
+  background-position: 0% 0%;
+  animation: background-fuckery 5s linear infinite alternate;
+}
+
+main > section {
+  animation: rotate 5s linear infinite;
+}
+
+main > section:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  animation: pseudo-rotate-before 2.5s ease-in-out alternate infinite;
+  background: linear-gradient(
+    to bottom,
+    lightblue,
+    aqua,
+    turquoise,
+    lightgreen
+  );
+}
+
+main > section:after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  animation: pseudo-rotate-after 2.5s ease-in-out alternate infinite;
+  background: linear-gradient(to top, gold, orange, red, purple);
+}
+
+main section ul {
+  animation: going-everywhere 2.5s linear infinite;
+}
+
+main section ul li {
+  animation: tripping-balls 5s ease-in-out infinite;
+}
+
+@keyframes pseudo-rotate-before {
+  from {
+    transform: rotateY(0turn) rotateX(0turn);
+  }
+  to {
+    transform: rotateY(2.25turn) rotateX(2.25turn);
+  }
+}
+
+@keyframes pseudo-rotate-after {
+  from {
+    transform: rotateX(0turn) rotateZ(0turn);
+  }
+
+  to {
+    transform: rotateX(2.25turn) rotateZ(2.25turn);
+  }
+}
+
+@keyframes going-everywhere {
+  from {
+    transform: rotateX(var(--rotateX)) rotateY(var(--rotateY))
+      rotateZ(var(--rotateZ))
+      translateX(calc(var(--x) * var(--cube-size) + var(--cube-size)))
+      translateY(calc(var(--y) * var(--cube-size) + var(--cube-size)))
+      translateZ(calc(var(--z) * var(--cube-size) + var(--cube-size)));
+  }
+  33.333% {
+    transform: rotateX(calc(var(--y) * 0.33turn))
+      rotateY(calc(var(--z) * 0.33turn)) rotateZ(calc(var(--x) * 0.33turn))
+      translateX(
+        calc(var(--x) * var(--cube-size) + var(--cube-size) / var(--y))
+      )
+      translateY(
+        calc(var(--y) * var(--cube-size) + var(--cube-size) * var(--z))
+      )
+      translateZ(
+        calc(var(--z) * var(--cube-size) + var(--cube-size) * var(--x))
+      );
+  }
+  66.667% {
+    transform: rotateX(calc(var(--x) * 0.67turn))
+      rotateY(calc(var(--y) * 0.67turn)) rotateZ(calc(var(--z) * 0.67turn))
+      translateX(
+        calc(var(--x) * var(--cube-size) + var(--cube-size) * var(--z))
+      )
+      translateY(
+        calc(var(--y) * var(--cube-size) + var(--cube-size) / var(--x))
+      )
+      translateZ(
+        calc(var(--z) * var(--cube-size) + var(--cube-size) * var(--y))
+      );
+  }
+  to {
+    transform: rotateX(calc(var(--z) * 1turn)) rotateY(calc(var(--x) * 1turn))
+      rotateZ(calc(var(--y) * 1turn))
+      translateX(calc(var(--x) * var(--cube-size) + var(--cube-size)))
+      translateY(calc(var(--y) * var(--cube-size) + var(--cube-size)))
+      translateZ(calc(var(--z) * var(--cube-size) + var(--cube-size)));
+  }
+}
+
+@keyframes tripping-balls {
+  from,
+  to {
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+  }
+  20% {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  40% {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  60% {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  }
+  80% {
+    clip-path: polygon(
+      20% 0%,
+      0% 20%,
+      30% 50%,
+      0% 80%,
+      20% 100%,
+      50% 70%,
+      80% 100%,
+      100% 80%,
+      70% 50%,
+      100% 20%,
+      80% 0%,
+      50% 30%
+    );
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0turn) rotateZ(0turn);
+  }
+  to {
+    transform: rotateX(0deg) rotateY(1turn) rotateZ(1turn);
+  }
+}
+
+@keyframes background-fuckery {
+  from {
+    background-size: 700vmax 700vmax;
+    background-position: -57vmax 100vmin;
+  }
+  50% {
+    background-size: 100vmax 100vmax;
+    background-position: 80vmin -100vmin;
+  }
+  to {
+    background-size: 700vmax 700vmax;
+    background-position: 47vmax -100vmax;
+  }
+}
