@@ -34,7 +34,7 @@ Week vier was voor mij bijkomen, gezien ik veel heb geleerd over CSS en het me a
 
 - 3D animaties.
 - Zoveel mogelijk logische interactie met CSS en HTML zonder JS.
-- Leuke easter eggs maken met CSS is top.
+- Leuke easter eggs maken met CSS is top (zoals een screensaver).
 
 ## Week 3
 
