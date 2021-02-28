@@ -6,7 +6,25 @@ Week vier was voor mij bijkomen, gezien ik veel heb geleerd over CSS en het me a
 
 ### Het eindresultaat
 
-<!-- Alle kubussen komen hier -->
+![Screenshot van een doodnormale kubus](assets/week4_1.png)
+
+> Een kubus met een klein magisch trucje in zich.
+
+![Screenshot van interactieve kubus](assets/week4_2.png)
+
+> Een kubus die zo interactief is als maar kan met css.
+
+![Screenshot van de screensaver](assets/week4_3.png)
+
+> Een screensaver voor echte kubusmensen.
+
+![Screenshot van groeiende kubus](assets/week4_4.png)
+
+> Een kubus die met je venster meegroeit.
+
+![Screenshot van de trippende kubus](assets/week3_1.png)
+
+> Een trippende kubus.
 
 ### Wat ging goed
 
@@ -38,7 +56,7 @@ Week vier was voor mij bijkomen, gezien ik veel heb geleerd over CSS en het me a
 
 ## Week 3
 
-<!-- Screenshot voortgang week 3 -->
+![Screenshot van 1 van de experimenten van deze week](assets/week3_1.png)
 
 Deze week heb ik de kubus volledig herschreven. In plaats van 6 vlakken zijn het nu 27 kleine kubusjes die samen 1 grote kubus vormen. Deze tactiek maakt het besturen van de kubus een heel stuk makkelijker, en dat is te zien ook met de experimenten die ik erop heb losgelaten.
 
@@ -75,7 +93,9 @@ Ik kon helaas de kubus niet verder interactief krijgen zonder JS te introduceren
 
 ## Week 2
 
-<!-- Screenshot voortgang week 2 -->
+![Screenshot van de interactieve kubus](assets/week2_1.png)
+
+![Screenshot van de screensaver](assets/week2_2.png)
 
 In week 1 had ik het voor elkaar gekregen om een kubus te maken door 6 vlakken zo tegen elkaar aan te zetten dat het een grote kubus vormt. Deze kubus kon ook makkelijk animeren, dus heb een goed gevoel over het interactief krijgen van de kubus.
 
