@@ -1,5 +1,14 @@
 # CSS to the Rescue @cmda-minor-web 2020 - 2021
 
+## Inhoudsopgave
+
+- [Week 4](#week-4)
+- [Week 3](#week-3)
+- [Week 2](#week-2)
+- [Week 1](#week-1)
+- [Bronnen](#bronnen)
+
+
 ## Week 4
 
 Week vier was voor mij bijkomen, gezien ik veel heb geleerd over CSS en het me allemaal even moest laten bezinken. Het eindresultaat mag er persoonlijk wel wezen, en ben dus ook erg trots op wat ik neer heb kunnen zetten.
@@ -158,3 +167,7 @@ Tot nu toe geen, maar dat komt zeer waarschijnlijk nog wel.
 
 ![Eerste afbeelding met schetsen](assets/sketches_1.png)
 ![Tweede afbeelding met schetsen](assets/sketches_2.png)
+
+## Bronnen
+
+> [Perspective approach geïnspireerd door @diervo hun html5rubrik](https://github.com/diervo/html5rubik/blob/master/rubik.css)
