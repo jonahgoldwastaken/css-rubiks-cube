@@ -14,24 +14,6 @@ main section ul {
   color: transparent;
 }
 
-[for^='row-1'],
-[for^='row-2'],
-[for^='row-3'],
-[for^='row-7'],
-[for^='row-8'],
-[for^='row-9'],
-[for^='column-0'],
-[for^='column-2'],
-[for^='column-3'],
-[for^='column-7'],
-[for^='column-8'],
-[for^='column-9'],
-[for^='column-10'],
-[for^='column-11'],
-[for^='column-12'] {
-  display: none;
-}
-
 /* Arrow button styling */
 [for^='row']:before,
 [for^='column']:before {
@@ -58,97 +40,47 @@ main section ul {
   transform: translateY(calc(-1 * var(--size))) rotateZ(0.25turn);
 }
 
-[for^='row-1']:before,
-[for^='row-4']:before,
-[for^='row-7']:before {
+[for^='row-4']:before {
   margin-top: calc(var(--size) / 0.9 * -0.5);
 }
 
-[for^='row-2']:before,
-[for^='row-5']:before,
-[for^='row-8']:before {
+[for^='row-5']:before {
   margin-top: calc(var(--size) / 2.5 * -0.5);
 }
 
-[for^='row-3']:before,
-[for^='row-6']:before,
-[for^='row-9']:before {
+[for^='row-6']:before {
   margin-top: calc(var(--size) / 3 * 0.5);
 }
 
-[for^='column-0']:before,
-[for^='column-4']:before,
-[for^='column-7']:before,
-[for^='column-10']:before {
+[for^='column-4']:before {
   margin-left: calc(var(--size) / 1.15 * -0.5);
 }
 
-[for^='column-2']:before,
-[for^='column-5']:before,
-[for^='column-8']:before,
-[for^='column-11']:before {
+[for^='column-5']:before {
   margin-left: calc(var(--size) / 4 * -0.25);
 }
 
-[for^='column-3']:before,
-[for^='column-6']:before,
-[for^='column-9']:before,
-[for^='column-12']:before {
+[for^='column-6']:before {
   margin-left: calc(var(--size) / 1.7 * 0.5);
 }
 
 /* Change position of label button based on which input is checked */
-[name^='row-1']:checked + label + input + [for^='row-1']:before,
-[name^='row-2']:checked + label + input + [for^='row-2']:before,
-[name^='row-3']:checked + label + input + [for^='row-3']:before,
 [name^='row-4']:checked + label + input + [for^='row-4']:before,
 [name^='row-5']:checked + label + input + [for^='row-5']:before,
-[name^='row-6']:checked + label + input + [for^='row-6']:before,
-[name^='row-7']:checked + label + input + [for^='row-7']:before,
-[name^='row-8']:checked + label + input + [for^='row-8']:before,
-[name^='row-9']:checked + label + input + [for^='row-9']:before {
+[name^='row-6']:checked + label + input + [for^='row-6']:before {
   transform: translateX(var(--size)) rotateZ(0.5turn);
 }
 
-[name^='column-0']:checked + label + input + [for^='column-0']:before,
-[name^='column-2']:checked + label + input + [for^='column-2']:before,
-[name^='column-3']:checked + label + input + [for^='column-3']:before,
 [name^='column-4']:checked + label + input + [for^='column-4']:before,
 [name^='column-5']:checked + label + input + [for^='column-5']:before,
-[name^='column-6']:checked + label + input + [for^='column-6']:before,
-[name^='column-7']:checked + label + input + [for^='column-7']:before,
-[name^='column-8']:checked + label + input + [for^='column-8']:before,
-[name^='column-9']:checked + label + input + [for^='column-9']:before,
-[name^='column-10']:checked + label + input + [for^='column-10']:before,
-[name^='column-11']:checked + label + input + [for^='column-11']:before,
-[name^='column-12']:checked + label + input + [for^='column-12']:before {
+[name^='column-6']:checked + label + input + [for^='column-6']:before {
   transform: translateY(var(--size)) rotateZ(0.75turn);
 }
 
-[name^='row-1']:checked + label + input + [for^='row-1'] ~ [for^='row-1'],
-[name^='row-2']:checked + label + input + [for^='row-2'] ~ [for^='row-2'],
-[name^='row-3']:checked + label + input + [for^='row-3'] ~ [for^='row-3'],
 [name^='row-4']:checked + label + input + [for^='row-4'] ~ [for^='row-4'],
 [name^='row-5']:checked + label + input + [for^='row-5'] ~ [for^='row-5'],
 [name^='row-6']:checked + label + input + [for^='row-6'] ~ [for^='row-6'],
-[name^='row-7']:checked + label + input + [for^='row-7'] ~ [for^='row-7'],
-[name^='row-8']:checked + label + input + [for^='row-8'] ~ [for^='row-8'],
-[name^='row-9']:checked + label + input + [for^='row-9'] ~ [for^='row-9'],
-[name^='column-0']:checked
-  + label
-  + input
-  + [for^='column-0']
-  ~ [for^='column-0'],
-[name^='column-2']:checked
-  + label
-  + input
-  + [for^='column-2']
-  ~ [for^='column-2'],
-[name^='column-3']:checked
-  + label
-  + input
-  + [for^='column-3']
-  ~ [for^='column-3'],
++ label + input + [for^='column-3'] ~ [for^='column-3'],
 [name^='column-4']:checked
   + label
   + input
@@ -164,152 +96,11 @@ main section ul {
   + input
   + [for^='column-6']
   ~ [for^='column-6'],
-[name^='column-7']:checked
-  + label
-  + input
-  + [for^='column-7']
-  ~ [for^='column-7'],
-[name^='column-8']:checked
-  + label
-  + input
-  + [for^='column-8']
-  ~ [for^='column-8'],
-[name^='column-9']:checked
-  + label
-  + input
-  + [for^='column-9']
-  ~ [for^='column-9'],
-[name^='column-10']:checked
-  + label
-  + input
-  + [for^='column-10']
-  ~ [for^='column-10'],
-[name^='column-11']:checked
-  + label
-  + input
-  + [for^='column-11']
-  ~ [for^='column-11'],
-[name^='column-12']:checked
-  + label
-  + input
-  + [for^='column-12']
-  ~ [for^='column-12'],
 input:checked + label {
   display: none;
 }
 
 /* Cube mutations based on checked buttons */
-/* ROW 1 */
-[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(19),
-[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(20),
-[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(21),
-[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(22),
-[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(23),
-[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(24),
-[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(25),
-[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(26),
-[name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(27) {
-  --rotateZ: 0.25turn;
-}
-
-[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(19),
-[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(20),
-[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(21),
-[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(22),
-[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(23),
-[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(24),
-[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(25),
-[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(26),
-[name^='row-1'][value='2']:checked ~ main section ul:nth-of-type(27) {
-  --rotateZ: 0.5turn;
-}
-
-[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(19),
-[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(20),
-[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(21),
-[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(22),
-[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(23),
-[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(24),
-[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(25),
-[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(26),
-[name^='row-1'][value='3']:checked ~ main section ul:nth-of-type(27) {
-  --rotateZ: 0.75turn;
-}
-
-/* ROW 2 */
-[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(10),
-[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(11),
-[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(12),
-[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(13),
-[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(14),
-[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(15),
-[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(16),
-[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(17),
-[name^='row-2'][value='1']:checked ~ main section ul:nth-of-type(18) {
-  --rotateZ: 0.25turn;
-}
-
-[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(10),
-[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(11),
-[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(12),
-[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(13),
-[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(14),
-[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(15),
-[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(16),
-[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(17),
-[name^='row-2'][value='2']:checked ~ main section ul:nth-of-type(18) {
-  --rotateZ: 0.5turn;
-}
-
-[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(10),
-[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(11),
-[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(12),
-[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(13),
-[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(14),
-[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(15),
-[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(16),
-[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(17),
-[name^='row-2'][value='3']:checked ~ main section ul:nth-of-type(18) {
-  --rotateZ: 0.75turn;
-}
-
-/* ROW 3 */
-[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(1),
-[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(2),
-[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(3),
-[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(4),
-[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(5),
-[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(6),
-[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(7),
-[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(8),
-[name^='row-3'][value='1']:checked ~ main section ul:nth-of-type(9) {
-  --rotateZ: 0.25turn;
-}
-
-[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(1),
-[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(2),
-[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(3),
-[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(4),
-[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(5),
-[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(6),
-[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(7),
-[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(8),
-[name^='row-3'][value='2']:checked ~ main section ul:nth-of-type(9) {
-  --rotateZ: 0.5turn;
-}
-
-[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(1),
-[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(2),
-[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(3),
-[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(4),
-[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(5),
-[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(6),
-[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(7),
-[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(8),
-[name^='row-3'][value='3']:checked ~ main section ul:nth-of-type(9) {
-  --rotateZ: 0.75turn;
-}
-
 /* ROW 4 */
 [name^='row-4'][value='1']:checked ~ main section ul:nth-of-type(1),
 [name^='row-4'][value='1']:checked ~ main section ul:nth-of-type(2),
