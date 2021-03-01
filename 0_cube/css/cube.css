@@ -1,3 +1,9 @@
+/*****************************************/
+/*         CUSTOM CUBE STYLING           */
+/*****************************************/
+/* Rotate animation and hover transition */
+/*****************************************/
+
 main > section {
   animation: rotate 5s linear infinite;
 }

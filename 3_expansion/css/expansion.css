@@ -1,3 +1,10 @@
+/*********************************************/
+/*             EXPANSION STYLING             */
+/*********************************************/
+/* Increasing the cube size on media queries */
+/*********************************************/
+
+/* 4x4x4 cube */
 main section ul:nth-child(28) {
   --x: 2;
   --z: 1;
@@ -220,6 +227,7 @@ main section ul:nth-child(64) {
   --y: 2;
 }
 
+/* 5x5x5 cube */
 main section ul:nth-child(65) {
   --x: -2;
   --z: 2;
@@ -586,6 +594,7 @@ main section ul:nth-child(125) {
   --y: 2;
 }
 
+/* Default state */
 main section ul:nth-child(28),
 main section ul:nth-child(29),
 main section ul:nth-child(30),
@@ -724,6 +733,7 @@ main section ul:nth-child(27) {
 }
 
 @media screen and (min-width: 50rem) {
+  /* 4x4x4 state */
   main section ul:nth-child(28),
   main section ul:nth-child(29),
   main section ul:nth-child(30),
@@ -802,6 +812,7 @@ main section ul:nth-child(27) {
 }
 
 @media screen and (min-width: 70rem) {
+  /* 5x5x5 cube */
   main section ul:nth-child(65),
   main section ul:nth-child(66),
   main section ul:nth-child(67),
@@ -873,6 +884,7 @@ main section ul:nth-child(27) {
   }
 }
 
+/* All the animations */
 @keyframes block-rotate {
   from {
     transform: rotateY(0turn)

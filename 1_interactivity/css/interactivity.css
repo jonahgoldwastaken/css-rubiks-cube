@@ -1,7 +1,14 @@
+/***************************************************/
+/*              INTERACTIVITY STYLING              */
+/***************************************************/
+/* All the styling that makes the cube interactive */
+/***************************************************/
+
 main section ul {
   transition: transform 0.4s cubic-bezier(0.64, 0.35, 0.26, 1.4);
 }
 
+/* Basic input label styling */
 [for^='row'],
 [for^='column'] {
   color: transparent;
@@ -25,6 +32,7 @@ main section ul {
   display: none;
 }
 
+/* Arrow button styling */
 [for^='row']:before,
 [for^='column']:before {
   content: '<';
@@ -89,6 +97,7 @@ main section ul {
   margin-left: calc(var(--size) / 1.7 * 0.5);
 }
 
+/* Change position of label button based on which input is checked */
 [name^='row-1']:checked + label + input + [for^='row-1']:before,
 [name^='row-2']:checked + label + input + [for^='row-2']:before,
 [name^='row-3']:checked + label + input + [for^='row-3']:before,
@@ -189,6 +198,7 @@ input:checked + label {
   display: none;
 }
 
+/* Cube mutations based on checked buttons */
 /* ROW 1 */
 [name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(19),
 [name^='row-1'][value='1']:checked ~ main section ul:nth-of-type(20),

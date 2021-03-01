@@ -1,3 +1,10 @@
+/****************************************/
+/*       (TRIPPING) BALLS STYLING       */
+/****************************************/
+/* Giving you one hell of a party trick */
+/****************************************/
+
+/* Making pretty colours */
 body {
   background: linear-gradient(
     to bottom right,
@@ -46,6 +53,7 @@ main > section:after {
   background: linear-gradient(to top, gold, orange, red, purple);
 }
 
+/* Animating the cube */
 main section ul {
   animation: going-everywhere 2.5s linear infinite;
 }
@@ -54,6 +62,7 @@ main section ul li {
   animation: tripping-balls 5s ease-in-out infinite;
 }
 
+/* Animations */
 @keyframes pseudo-rotate-before {
   from {
     transform: rotateY(0turn) rotateX(0turn);

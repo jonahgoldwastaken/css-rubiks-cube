@@ -1,3 +1,13 @@
+/*********************************************/
+/*               CUBE STYLING                */
+/*********************************************/
+/* Where the basic Rubik's cube gets created */
+/*********************************************/
+
+/* Perspective approach inspired by https://github.com/diervo/html5rubik/blob/master/rubik.css */
+/* HTML and CSS layout already set before implementing perspective */
+
+/* The container of the cube */
 main > section {
   position: absolute;
   top: calc(50% - var(--half-size));
@@ -10,6 +20,7 @@ main > section {
   transform-origin: var(--half-size) var(--half-size) var(--half-size);
 }
 
+/* All the cubes making up the Rubik's cube */
 section ul {
   --x: 0;
   --y: 0;
@@ -38,6 +49,7 @@ section ul {
   transform-origin: var(--half-size) var(--half-size) var(--half-size);
 }
 
+/* The sides of all the small cubes */
 section ul li {
   box-sizing: border-box;
   position: absolute;
@@ -77,6 +89,7 @@ section ul li:nth-child(6) {
   transform: rotateX(0.25turn);
 }
 
+/* The position of all the cubes */
 main section ul:nth-of-type(1) {
   --x: -1;
   --y: -1;
